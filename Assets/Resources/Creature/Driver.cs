@@ -15,6 +15,11 @@ public class Driver : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, Random.Range(0, 360));
 
     }
+   private void OnCollisionEnter2D(Collision2D other) {
+         if (other.gameObject.tag == "Creature") {
+         Physics.IgnoreCollision(other.gameObject.GetComponent<Collider>(), gameObject.GetComponent<Collider>());
+         }
+   }
 
     // Update is called once per frame
     void Update()

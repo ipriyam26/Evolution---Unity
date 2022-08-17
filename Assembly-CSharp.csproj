@@ -36,8 +36,9 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Resources/Creature/Driver.cs" />
      <Compile Include="Assets/Border/Collision.cs" />
-     <Compile Include="Assets/Creature/Driver.cs" />
+     <Compile Include="Assets/Resources/Pool/Creator.cs" />
     <Reference Include="UnityEngine">
         <HintPath>/Volumes/SSD/Applications/2021.3.7f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
